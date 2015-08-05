@@ -4,4 +4,4 @@ MAINTAINER Lee Verberne <lee@blarg.org>
 RUN apt-get update && apt-get install -y inspircd
 
 USER irc
-CMD ["/usr/sbin/inspircd", "--nofork"]
+CMD ["/usr/sbin/inspircd", "--nofork", "--debug", "--nolog"]
